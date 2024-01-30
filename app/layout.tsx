@@ -5,7 +5,7 @@ import "./globals.css";
 import { Suspense } from "react";
 
 export const metadata = {
-  title: "Headshots AI",
+  title: "Utopia Cloner",
   description: "Generate awesome headshots in minutes using AI",
 };
 
