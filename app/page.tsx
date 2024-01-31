@@ -33,7 +33,7 @@ export default async function Index() {
             Do you look like a criminal in every photo?<br>
             You look good but somehow it doesn't come through?</br>
             Solved by AI!</br>
-            Train a custom model with your f*ucked up photos, and create your good lookin' clone
+            Train a custom model with your f*cked up photos, and create your good lookin' clone
             
           </p>
           <div className="flex flex-col space-y-2">
