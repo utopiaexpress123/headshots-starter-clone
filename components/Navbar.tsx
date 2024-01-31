@@ -39,6 +39,15 @@ export default async function Navbar() {
           <h2 className="font-bold">Utopia Express Cloner</h2>
         </Link>
       </div>
+
+      <div className="lg:w-1/2 w-full mt-8 lg:mt-0">
+          <img
+            src={logo.src}
+            alt="AI Headshot Illustration"
+            className="w-full h-full"
+          />
+      </div>
+
       {user && (
         <div className="hidden lg:flex flex-row gap-2">
           <Link href="/overview">
