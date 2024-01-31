@@ -42,9 +42,7 @@ const BotpressChat = () => {
     }, []);
 
     return (
-        <div>
-            {/* Content of your component (if any) */}
-        </div>
+
     );
 };
 
