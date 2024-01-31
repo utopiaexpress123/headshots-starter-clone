@@ -2,7 +2,7 @@ import { createServerComponentClient } from "@supabase/auth-helpers-nextjs";
 import { cookies } from "next/headers";
 import Link from "next/link";
 import { redirect } from "next/navigation";
-
+import BotpressChat from 'components/BotpressChat';
 import hero from "/public/hero.png";
 
 import { Button } from "@/components/ui/button";
@@ -30,10 +30,10 @@ export default async function Index() {
             Finally have a good photo of you!
           </h1>
           <p className="text-gray-600 text-lg">
-            Do you look like a criminal in every photo?<br>
-            You look good but somehow it doesn't come through?</br>
-            Solved by AI!</br>
-            Train a custom model with your f*cked up photos, and create your good lookin' clone
+            Do you look like a criminal in every photo?
+            You look good but somehow it doesn't come through?
+            Solved by AI!
+            Train a custom model with your f*ucked up photos, and create your good lookin' clone
             
           </p>
           <div className="flex flex-col space-y-2">
@@ -58,6 +58,7 @@ export default async function Index() {
       </div>
       <ExplainerSection />
       <PricingSection />
+      <BotpressChat />
     </div>
   );
 }
