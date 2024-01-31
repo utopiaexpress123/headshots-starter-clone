@@ -28,11 +28,14 @@ export default async function Index() {
             Finally have a good photo of you!
           </h1>
           <p className="text-gray-600 text-lg">
-            Do you look like a criminal in every photo?
-            You look good but somehow it doesn't come through?
+            Do you look like a criminal in every photo?    
+          </p>
+          <p className="text-gray-600 text-lg">
+            You look good but somehow it doesn't come through?    
+          </p>
+          <p className="text-gray-600 text-lg">
             Solved by AI!
-            Train a custom model with your f*ucked up photos, and create your good lookin' clone
-            
+            Train a custom model with your f*ucked up photos, and create your good lookin' clone    
           </p>
           <div className="flex flex-col space-y-2">
             <Link href="/login">
