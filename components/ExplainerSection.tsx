@@ -1,4 +1,4 @@
-import blur from "/public/blur.png";
+import blurred from "/public/blurred.gif";
 import example from "/public/example.png";
 import result from "/public/result.png";
 
@@ -38,7 +38,7 @@ export default function ExplainerSection() {
           The AI magic takes ~20 minutes. You'll get an email when its ready!
         </p>
         <img
-          src={blur.src}
+          src={blurred.src}
           alt="AI Headshot blur"
           className="rounded-lg object-cover w-full md:w-3/4 lg:w-1/2 mx-auto"
         />
