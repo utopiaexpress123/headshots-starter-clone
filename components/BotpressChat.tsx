@@ -41,9 +41,7 @@ const BotpressChat = () => {
         };
     }, []);
 
-    return (
-
-    );
+    return null; // Returning null since the component does not need to render anything itself
 };
 
 export default BotpressChat;
