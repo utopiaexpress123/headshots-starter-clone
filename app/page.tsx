@@ -3,9 +3,9 @@ import { cookies } from "next/headers";
 import Link from "next/link";
 import { redirect } from "next/navigation";
 import hero from "/public/hero.png";
-import dynamic from 'next/dynamic';
+import dynamicChatbot from 'next/dynamic';
 
-const Chatbot = dynamic(() => import('/components/Chatbot'), {
+const Chatbot = dynamicChatbot(() => import('/components/Chatbot'), {
   ssr: false,
 });
 import { Button } from "@/components/ui/button";
