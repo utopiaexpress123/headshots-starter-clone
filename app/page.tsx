@@ -2,7 +2,7 @@ import { createServerComponentClient } from "@supabase/auth-helpers-nextjs";
 import { cookies } from "next/headers";
 import Link from "next/link";
 import { redirect } from "next/navigation";
-import Chatbot from 'components/Chatbot'
+import Chatbot from '/components/Chatbot'
 import hero from "/public/hero.png";
 
 import { Button } from "@/components/ui/button";
