@@ -3,11 +3,6 @@ import { cookies } from "next/headers";
 import Link from "next/link";
 import { redirect } from "next/navigation";
 import hero from "/public/hero.png";
-import dynamicChatbot from 'next/dynamic';
-
-const Chatbot = dynamicChatbot(() => import('/components/Chatbot'), {
-  ssr: false,
-});
 import { Button } from "@/components/ui/button";
 import ExplainerSection from "@/components/ExplainerSection";
 import PricingSection from "@/components/PricingSection";
@@ -65,11 +60,3 @@ export default async function Index() {
   );
 }
 
-export default function Page() {
-  return (
-    <>
-      {/* Other components */}
-      <Chatbot />
-    </>
-  );
-}
