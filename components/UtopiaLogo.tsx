@@ -1,42 +1,16 @@
-import { AvatarIcon } from "@radix-ui/react-icons";
-import { createServerComponentClient } from "@supabase/auth-helpers-nextjs";
-import { cookies } from "next/headers";
-import {
-  DropdownMenu,
-  DropdownMenuContent,
-  DropdownMenuItem,
-  DropdownMenuLabel,
-  DropdownMenuSeparator,
-  DropdownMenuTrigger,
-} from "./ui/dropdown-menu";
-import Link from "next/link";
-import { Button } from "./ui/button";
-import React from "react";
-import { Database } from "@/types/supabase";
-import ClientSideCredits from "./realtime/ClientSideCredits";
+import React from 'react'
 
-export const dynamic = "force-dynamic";
-
-const stripeIsConfigured = process.env.NEXT_PUBLIC_STRIPE_IS_ENABLED === "true";
-
-export const revalidate = 0;
-
-export default async function Navbar() {
-  const supabase = createServerComponentClient<Database>({ cookies });
-
-  const {
-    data: { user },
-  } = await supabase.auth.getUser();
-
-  const {
-    data: credits,
-  } = await supabase.from("credits").select("*").eq("user_id", user?.id ?? '').single()
-
+export default function UtopiaLogo() {
   return (
-    <div className="flex w-full px-4 lg:px-40 py-4 items-center border-b text-center gap-8 justify-between">
-      <div className="flex gap-2 h-full">
-        <Link href="/">
-        <svg class="vertical-logo" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="93px" height="16px" viewBox="0 0 1366 240" enable-background="new 0 0 1366 240" xml:space="preserve">
+
+
+<svg 
+      aria-label="utopia express logotype"
+      height="16"
+      role="img"
+      viewBox="0 0 1366 240"
+      width="93"
+>
         <path d="M165,18c17.2,0,33.8,0,50.8,0c0.1,0.7,0.1,1.4,0.1,2c0,42.3,0,84.6-0.1,126.8c0,4.4-0.3,8.8-1.2,13.1c-1,4.6-2,9.3-3.7,13.8
         c-2.2,6-4.8,11.8-8.1,17.2c-2.8,4.5-6.1,8.6-9.7,12.5c-6.6,7.2-14.2,13-22.6,17.7c-5.1,2.9-10.6,5.2-16,7.4
         c-3.8,1.6-7.7,2.7-11.6,3.9c-2,0.6-4,0.8-6,1.2c-2.7,0.5-5.4,1.1-8.1,1.6c-0.4,0.1-1.1,0.2-1.5,0.2c-9.6,1.1-19.2,1.4-28.9,0.8
@@ -88,55 +62,6 @@ export default async function Navbar() {
         <path d="M628,100.8c3.9,0,7.5,0.9,10.9,2.4c4.9,2.2,8.4,5.9,10.5,11c1.9,4.5,2.4,9.3,1.8,14c-1,8-4.8,14.3-12.3,17.6
         c-5.4,2.4-11.2,2.8-17.1,1.5c-2.9-0.7-5.6-1.6-8.1-3.2c-4.6-3-7.2-7.2-8.6-12.6c-0.7-2.8-1-5.6-0.8-8.5c0.5-8.8,4.3-15.6,12.2-19.8
         c1.5-0.8,3.3-1,5-1.4C623.6,101.5,625.8,101.2,628,100.8z"></path>
-        </svg>
-        </Link>
-      </div>
-
-
-      {user && (
-        <div className="hidden lg:flex flex-row gap-2">
-          <Link href="/overview">
-            <Button variant={"ghost"}>Home</Button>
-          </Link>
-          {stripeIsConfigured && (
-            <Link href="/get-credits">
-              <Button variant={"ghost"}>Get Credits</Button>
-            </Link>
-          )}
-        </div>
-      )}
-      <div className="flex gap-4 lg:ml-auto">
-        {!user && (
-          <Link href="/login">
-            <Button variant={"ghost"}>Login / Signup</Button>
-          </Link>
-        )}
-        {user && (
-          <div className="flex flex-row gap-4 text-center align-middle justify-center">
-            {stripeIsConfigured && (
-              <ClientSideCredits creditsRow={credits ? credits : null} />
-            )}
-            <DropdownMenu>
-              <DropdownMenuTrigger asChild className="cursor-pointer">
-                <AvatarIcon height={24} width={24} className="text-primary" />
-              </DropdownMenuTrigger>
-              <DropdownMenuContent className="w-56">
-                <DropdownMenuLabel className="text-primary text-center overflow-hidden text-ellipsis">{user.email}</DropdownMenuLabel>
-                <DropdownMenuSeparator />
-                <form action="/auth/sign-out" method="post">
-                  <Button
-                    type="submit"
-                    className="w-full text-left"
-                    variant={"ghost"}
-                    >
-                    Log out
-                  </Button>
-                </form>
-              </DropdownMenuContent>
-            </DropdownMenu>
-          </div>
-        )}
-      </div>
-    </div>
-  );
+    </svg>
+  )
 }
