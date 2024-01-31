@@ -6,7 +6,7 @@ import { Suspense } from "react";
 
 export const metadata = {
   title: "Utopia Cloner",
-  description: "Generate awesome headshots in minutes using AI",
+  description: "Generate awesome photos of your clone",
 };
 
 export default function RootLayout({ children }: any) {
