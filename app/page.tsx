@@ -61,7 +61,15 @@ export default async function Index() {
       </div>
       <ExplainerSection />
       <PricingSection />
-      <Chatbot />
     </div>
+  );
+}
+
+export default function Page() {
+  return (
+    <>
+      {/* Other components */}
+      <Chatbot />
+    </>
   );
 }
