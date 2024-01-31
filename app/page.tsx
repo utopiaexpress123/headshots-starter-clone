@@ -2,8 +2,8 @@ import { createServerComponentClient } from "@supabase/auth-helpers-nextjs";
 import { cookies } from "next/headers";
 import Link from "next/link";
 import { redirect } from "next/navigation";
-
 import hero from "/public/hero.png";
+import BotpressChat from 'components/BotpressChat';
 
 import { Button } from "@/components/ui/button";
 import ExplainerSection from "@/components/ExplainerSection";
@@ -58,6 +58,7 @@ export default async function Index() {
       </div>
       <ExplainerSection />
       <PricingSection />
+      <BotpressChat />
     </div>
   );
 }
