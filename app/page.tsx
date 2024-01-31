@@ -4,7 +4,11 @@ import Link from "next/link";
 import { redirect } from "next/navigation";
 import Chatbot from '/components/Chatbot';
 import hero from "/public/hero.png";
+import dynamic from 'next/dynamic';
 
+const Chatbot = dynamic(() => import('/components/Chatbot'), {
+  ssr: false,
+});
 import { Button } from "@/components/ui/button";
 import ExplainerSection from "@/components/ExplainerSection";
 import PricingSection from "@/components/PricingSection";
