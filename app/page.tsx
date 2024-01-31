@@ -28,10 +28,8 @@ export default async function Index() {
             Finally have a good photo of you!
           </h1>
           <p className="text-gray-600 text-lg">
-            Do you look like a criminal in every photo?    
-          </p>
-          <p className="text-gray-600 text-lg">
-            You look good but somehow it doesn't come through?    
+            Do you look like a criminal in every photo?   
+            You look good but somehow it doesn't come through?     
           </p>
           <p className="text-gray-600 text-lg">
             Solved by AI!
