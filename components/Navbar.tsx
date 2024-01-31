@@ -36,7 +36,7 @@ export default async function Navbar() {
     <div className="flex w-full px-4 lg:px-40 py-4 items-center border-b text-center gap-8 justify-between">
       <div className="flex gap-2 h-full">
         <Link href="/">
-          <h2 className="font-bold">
+          <h2>
           <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="93px" height="16px" viewBox="0 0 1366 240" enable-background="new 0 0 1366 240" xml:space="preserve">
                 <path d="M165,18c17.2,0,33.8,0,50.8,0c0.1,0.7,0.1,1.4,0.1,2c0,42.3,0,84.6-0.1,126.8c0,4.4-0.3,8.8-1.2,13.1c-1,4.6-2,9.3-3.7,13.8
                 c-2.2,6-4.8,11.8-8.1,17.2c-2.8,4.5-6.1,8.6-9.7,12.5c-6.6,7.2-14.2,13-22.6,17.7c-5.1,2.9-10.6,5.2-16,7.4
