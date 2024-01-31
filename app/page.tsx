@@ -30,9 +30,9 @@ export default async function Index() {
             Finally have a good photo of you!
           </h1>
           <p className="text-gray-600 text-lg">
-            Do you look like a criminal in every photo?
-            You look good but somehow it doesn't come through?
-            Solved by AI!
+            Do you look like a criminal in every photo?<br>
+            You look good but somehow it doesn't come through?</br>
+            Solved by AI!</br>
             Train a custom model with your f*ucked up photos, and create your good lookin' clone
             
           </p>
