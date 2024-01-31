@@ -40,13 +40,6 @@ export default async function Navbar() {
         </Link>
       </div>
 
-      <div className="lg:w-1/2 w-full mt-8 lg:mt-0">
-          <img
-            src={logo.src}
-            alt="AI Headshot Illustration"
-            className="w-full h-full"
-          />
-      </div>
 
       {user && (
         <div className="hidden lg:flex flex-row gap-2">
