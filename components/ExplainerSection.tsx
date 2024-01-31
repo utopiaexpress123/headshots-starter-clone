@@ -13,7 +13,7 @@ export default function ExplainerSection() {
           <div className="text-3xl font-bold text-blue-600 bg-white border-2 border-blue-600 rounded-full w-10 h-10 flex items-center justify-center">
             1
           </div>
-          <h3 className="text-2xl font-semibold">Upload your images</h3>
+          <h3 className="text-2xl font-semibold">Upload your f*cked up photos</h3>
         </div>
         <p className="text-sm text-gray-600 text-center">
           Upload 4+ high-quality selfies: front facing, 1 person in frame, no
