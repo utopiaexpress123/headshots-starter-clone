@@ -6,7 +6,7 @@ import hero from "/public/hero.png";
 import { Button } from "@/components/ui/button";
 import ExplainerSection from "@/components/ExplainerSection";
 import PricingSection from "@/components/PricingSection";
-
+import Spline from '@splinetool/react-spline';
 export const dynamic = "force-dynamic";
 
 export default async function Index() {
@@ -57,7 +57,9 @@ export default async function Index() {
       </div>
       <ExplainerSection />
       <PricingSection />
+      <Spline scene="https://prod.spline.design/gTGfQV7mcmTe3gFd/scene.splinecode" />
     </div>
   );
 }
+
 
